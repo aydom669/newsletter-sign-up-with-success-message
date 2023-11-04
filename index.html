@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Newsletter sign-up form with success message</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+    <!--Css-->
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!------------------------------>
+  </head>
+  <body>
+    <main class="main">
+      <div class="main__container">
+        <div class="main__container--text">
+          <h1 class="main__container--text--h1">Stay updated!</h1>
+          <p class="main__container--text--p01">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <p class="main__container--text--p02">
+            <img
+              class="main__container--text--icon"
+              src="assets/images/icon-success.svg"
+              width="18px"
+              alt="Icone de sucesso"
+            />
+            Product discovery and building what matters <br />
+            <img
+              class="main__container--text--icon"
+              src="assets/images/icon-success.svg"
+              width="18px"
+              alt="Icone de sucesso"
+            />
+            Measuring to ensure updates are a success <br />
+            <img
+              class="main__container--text--icon"
+              src="assets/images/icon-success.svg"
+              width="18px"
+              alt="Icone de sucesso"
+            />
+            And much more!
+          </p>
+          <form class="main__container--form">
+            <label for="#" class="main__container--form--label"
+              >Email address</label
+            ><br />
+            <input
+              class="main__container--form--input--email"
+              type="email"
+              placeholder="Email address"
+              id="emailPlacehold"
+            />
+            <br />
+            <input
+              class="main__container--form--input--btn"
+              type="submit"
+              value="Subscribe to monthly newsletter"
+            />
+          </form>
+        </div>
+        <div class="main__img">
+          <img
+            src="assets/images/illustration-sign-up-desktop.svg"
+            width="auto"
+            alt="img"
+          />
+        </div>
+      </div>
+    </main>
+    <!--Container de Confirmação de cadastro-->
+    <div class="containerCorfimacao ">
+      <div class="containerCorfimacao__icon">
+        <img
+          src="assets/images/icon-success.svg"
+          alt="iconCorfimação"
+          width="50px"
+        />
+      </div>
+      <div class="containerCorfimacao__text">
+        <h1 class="containerCorfimacao__text--h1">Thanks for subscribing!</h1>
+        <p class="containerConfirmacao__text--p">
+          A confirmation email has been sent to
+          <strong id="email_placeholder"></strong>. Please open it and click the
+          button inside to confirm your subscription.
+        </p>
+        <button class="containerCorfimacao__btn">Dismiss message</button>
+      </div>
+    </div>
+
+    <script src="assets/Js/main.js"></script>
+  </body>
+</html>
